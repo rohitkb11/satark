@@ -1,4 +1,4 @@
-# ScamCheck
+# Satark
 
 An Android MVP in development: check suspicious messages and links on the phone, explain the evidence, and suggest independent verification.
 
@@ -6,7 +6,7 @@ An Android MVP in development: check suspicious messages and links on the phone,
 
 ## Android app
 
-The app supports Android 8.0 (API 26) or newer. Paste a message, share text/plain content, send selected text, or choose ScamCheck when Android offers it for a web link. Review the input, optionally enable experimental AI, then tap **Check privately**. Open **Connections, history and updates** to enable selected WhatsApp previews or encrypted history. Android access must also be granted for previews.
+The app supports Android 8.0 (API 26) or newer. Paste a message, share text/plain content, send selected text, or choose Satark when Android offers it for a web link. Review the input, optionally enable experimental AI, then tap **Check privately**. Open **Connections, history and updates** to enable selected WhatsApp previews or encrypted history. Android access must also be granted for previews.
 
 ```powershell
 .\scripts\android-build.ps1 -Test -Lint
@@ -89,3 +89,7 @@ Reuse the same checker instance. Result fields include level, findings, links, a
 - `docs/DATA_SOURCES.md`: source dates, list version, hash and third-party disclosure.
 
 The core targets Java 17. The Android app uses core-library desugaring for records, collections and stream APIs. A checked, simple HTTP(S) link can be handed to a user-selected external app after a separate confirmation. Opening it may use the external app's internet connection and disclose the URL; ScamCheck never fetches it.
+
+## Project name
+
+Satark — Think before you tap. The Android app label and screens use Satark. The application ID `in.scamcheck.app`, encryption identifiers and older artifact filenames are retained for compatibility with existing installs. Historical screenshots show the earlier ScamCheck name. New builds also create `output/Satark-debug.apk`.

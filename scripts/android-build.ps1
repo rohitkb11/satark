@@ -23,5 +23,6 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Android build or checks failed.' }
     New-Item -ItemType Directory -Force -Path 'output' | Out-Null
     Copy-Item -LiteralPath 'app/build/outputs/apk/debug/app-debug.apk' -Destination 'output/ScamCheck-debug.apk' -Force
-    Write-Host 'APK ready: output/ScamCheck-debug.apk'
+    Copy-Item -LiteralPath 'app/build/outputs/apk/debug/app-debug.apk' -Destination 'output/Satark-debug.apk' -Force
+    Write-Host 'APK ready: output/Satark-debug.apk (legacy alias: output/ScamCheck-debug.apk)'
 } finally { Pop-Location }

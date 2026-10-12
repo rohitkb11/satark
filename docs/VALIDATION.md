@@ -61,3 +61,7 @@ With a connected Android emulator/device and the Android SDK available, build th
 - The final rebuild includes a wording correction that links are never opened automatically. Detection and connection logic matches the tested implementation. The updated result render also passes its installed-app test.
 
 For native Phase 3 tests, build/install `:fixture:assembleDebug` along with `:app:assembleDebugAndroidTest` on a disposable emulator. Tests reset their own app-owned history/update data. Do not run them against a personal install containing summaries you want to retain.
+
+## Satark naming and repository publication
+
+The existing MVP was imported into separate feature/documentation commits, then renamed in the Android label, screens and notifications. Legacy package names, cryptographic identifiers and historical screenshots remain compatible. The Satark branding build passes assembleDebug, all 12 Robolectric tests and lint (zero errors); APK signature verification passes. The prior 11 native tests cover the unchanged connection/detection logic. New output `Satark-debug.apk` has SHA-256 `64F315FE8D830012B901D51F4EA1AE2DF0778F659EDAF70679988188ED48C8AA`; the legacy APK alias has the same bytes. The earlier Phase 3 hash above identifies the pre-branding artifact.

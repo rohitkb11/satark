@@ -68,7 +68,7 @@ public final class MainActivity extends Activity {
             return insets;
         });
         TextView badge=text("ON YOUR PHONE  /  OFFLINE",11,GREEN,true); badge.setLetterSpacing(0.1f); page.addView(badge);
-        page.addView(text("ScamCheck",34,INK,true), margin(0,12));
+        page.addView(text("Satark",34,INK,true), margin(0,12));
         page.addView(text("A second look before you act.",17,MUTED,false));
         page.addView(text("Check a message or link. Get clear reasons and a safer next step, without uploading your conversation.",14,MUTED,false),margin(12,20));
 
@@ -212,7 +212,7 @@ public final class MainActivity extends Activity {
         scroll.post(()->{if(!destroyed)scroll.smoothScrollTo(0,results.getTop()-dp(16));});
     }
     private void confirmHandoff(String rawLink){
-        AlertDialog confirm=new AlertDialog.Builder(this).setTitle("Continue to another app?").setMessage("ScamCheck has not inspected the live website. Another app may connect to the internet and receive the complete link. Your message text is not handed over. Only continue if you accept the risk.")
+        AlertDialog confirm=new AlertDialog.Builder(this).setTitle("Continue to another app?").setMessage("Satark has not inspected the live website. Another app may connect to the internet and receive the complete link. Your message text is not handed over. Only continue if you accept the risk.")
             .setNegativeButton("Stay here",null).setPositiveButton("Choose app",(dialog,which)->{
                 Intent view=new Intent(Intent.ACTION_VIEW,Uri.parse(rawLink)).addCategory(Intent.CATEGORY_BROWSABLE);
                 List<ResolveInfo> choices=getPackageManager().queryIntentActivities(view,0).stream()

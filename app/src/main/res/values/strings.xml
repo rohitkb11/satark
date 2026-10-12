@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name" translatable="false">Satark</string>
     <string name="model_unavailable" translatable="false">Experimental AI unavailable - rules still work</string>
     <string name="cleared" translatable="false">Cleared. No history is saved.</string>
     <string name="use_ai" translatable="false">Use experimental AI</string>

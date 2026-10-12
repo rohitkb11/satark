@@ -49,7 +49,7 @@ public final class PreviewListener extends NotificationListenerService {
                 manager.createNotificationChannel(new NotificationChannel(CHANNEL,"Suspicious message previews",NotificationManager.IMPORTANCE_DEFAULT));
                 Intent review=new Intent(this,MainActivity.class).putExtra("preview_token",token);
                 PendingIntent action=PendingIntent.getActivity(this,301,review,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
-                Notification publicView=new Notification.Builder(this,CHANNEL).setSmallIcon(in.scamcheck.app.R.drawable.ic_shield).setContentTitle("ScamCheck").setContentText("Open the app to review a private warning.").build();
+                Notification publicView=new Notification.Builder(this,CHANNEL).setSmallIcon(in.scamcheck.app.R.drawable.ic_shield).setContentTitle("Satark").setContentText("Open the app to review a private warning.").build();
                 Notification warning=new Notification.Builder(this,CHANNEL).setSmallIcon(in.scamcheck.app.R.drawable.ic_shield)
                     .setContentTitle("A message preview needs attention").setContentText("Tap to review the reasons. Only a preview was checked.")
                     .setVisibility(Notification.VISIBILITY_PRIVATE).setPublicVersion(publicView).setContentIntent(action).setAutoCancel(true).setTimeoutAfter(5*60_000).build();

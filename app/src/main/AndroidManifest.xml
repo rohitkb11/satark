@@ -2,7 +2,7 @@
     <!-- Deliberately no INTERNET, SMS, contacts, storage or accessibility permissions. -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <queries><intent><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.BROWSABLE"/><data android:scheme="https"/></intent><intent><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.BROWSABLE"/><data android:scheme="http"/></intent></queries>
-    <application android:label="ScamCheck" android:theme="@style/AppTheme"
+    <application android:label="@string/app_name" android:theme="@style/AppTheme"
         android:icon="@drawable/ic_shield" android:allowBackup="false"
         android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules"
         android:usesCleartextTraffic="false">
