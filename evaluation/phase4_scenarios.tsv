@@ -1,0 +1,57 @@
+id	family	label	text
+scam01	otp-agent	scam	Urgent: disclose your verification code to the account agent
+scam02	pin-bank	scam	Your account is suspended: send your PIN to the support officer
+scam03	kyc-subdomain	scam	SBI: verify account at https://sbi.bank.in.example.org/login immediately
+scam04	brand-path	scam	HDFC Bank: update KYC at https://example.org/hdfc.bank.in
+scam05	user-info	scam	ICICI Bank: login at https://icici.bank.in@example.org/verify
+scam06	refund-fee	scam	Immediately pay a release fee to claim your refund
+scam07	remote-help	scam	Urgent: install AnyDesk so we can fix your banking app
+scam08	apk-wallet	scam	Your account is blocked; download this APK for wallet recovery
+scam09	collect-refund	scam	Approve this UPI collect request to receive the refund money
+scam10	qr-cashback	scam	Scan our QR code to claim cashback
+scam11	upi-accept	scam	Accept the payment request to get your reward
+scam12	secret-paraphrase	scam	Our recovery officer needs your login secret in this conversation
+scam13	gift-cards	scam	Buy gift cards and send the numbers so your salary can be released
+scam14	safe-account	scam	Move your savings into the safe account supplied by the investigator
+scam15	otp-zero-width	scam	Urgent: sh​are your O​TP with the officer
+scam16	trusted-host	scam	Urgent! Share your OTP with the agent. https://www.amazon.in/orders
+scam17	refund-advance	scam	Transfer a processing fee to unlock the reward immediately
+scam18	support-password	scam	Immediately provide your password for account recovery
+scam19	qr-refund	scam	Scan this QR to receive your refund
+scam20	install-negation-bypass	scam	Never ignore us: install TeamViewer immediately
+scam21	unicode-cyrillic	scam	HDFC Bank: verify account at https://hdfc.bаnk.in.example.org
+scam22	police-extort	scam	You are under digital arrest. Deposit security money into the officer account
+scam23	wallet-secret	scam	The wallet officer needs your security phrase to reverse the transfer
+scam24	rewards-link	scam	Amazon: urgent payment for a reward at https://amazon.in.example.org
+benign01	otp-notice	benign	Your one-time code is 752194. Never share it with anybody.
+benign02	balance	benign	Your balance was updated after the grocery payment.
+benign03	bill	benign	Approve the payment request to pay your electricity bill
+benign04	refund-issued	benign	Your refund has been credited to the original payment method.
+benign05	order	benign	Track your Amazon order at https://www.amazon.in/orders
+benign06	bank-root	benign	Your SBI statement is available at https://sbi.bank.in
+benign07	qr-warning	benign	Do not scan a QR code to receive money
+benign08	collect-warning	benign	Never approve a UPI collect request to receive a refund
+benign09	remote-warning	benign	Never install AnyDesk when an unknown caller asks you
+benign10	password-warning	benign	Do not disclose your password to anyone
+benign11	upi-receipt	benign	You received a UPI payment from your friend.
+benign12	salary	benign	Salary was credited to your account today.
+benign13	security-advice	benign	If your account is blocked, contact your bank independently.
+benign14	password-app	benign	Enter your password in your own banking app to log in.
+benign15	otp-app	benign	Enter your OTP in the payment app to authorise your purchase.
+benign16	merchant-qr	benign	Scan the merchant QR to pay for groceries.
+benign17	cashback	benign	Cashback is already credited; no action is needed.
+benign18	kyc-office	benign	Visit your branch during working hours for KYC assistance.
+benign19	sbi-help	benign	SBI customer information is available on https://sbi.bank.in
+benign20	refund-advice	benign	Never pay a fee to claim a refund
+benign21	help-time	benign	Urgent reminder: the community safety meeting starts today.
+benign22	delivery	benign	Your Flipkart order is dispatched: https://www.flipkart.com
+benign23	transfer	benign	Your scheduled rent transfer completed successfully.
+benign24	money-request	benign	Please repay the dinner amount when you have time.
+unknown01	short-link	unknown	https://bit.ly/demo-check
+unknown02	new-site	unknown	https://example.org/help
+unknown03	http	unknown	http://www.amazon.in/orders
+unknown04	ip	unknown	https://192.0.2.1/login
+unknown05	other-script	unknown	कृपया यह संदेश जांचें
+unknown06	broken-link	unknown	https://[broken
+unknown07	nonweb	unknown	javascript:alert(1)
+unknown08	hidden	unknown	New me​ssage available
