@@ -1,0 +1,82 @@
+{
+  "model": "synthetic-linear-v1",
+  "algorithm": "hashed word/bigram/character features + logistic regression",
+  "dimensions": 4096,
+  "seed": 42,
+  "threshold": 0.63,
+  "dataset_sha256": "c663a18adca56e996e4ef24bbeaca379e6304e9b776ae8cfebfabf9263b425bd",
+  "split_policy": "Whole campaign templates are exclusive to train, validation, or test.",
+  "warning": "Synthetic, AI-assisted development data. Not independently validated and not real-world accuracy.",
+  "train": {
+    "count": 96,
+    "tp": 48,
+    "fp": 0,
+    "tn": 48,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_warning_rate": 0.0
+  },
+  "validation": {
+    "count": 30,
+    "tp": 18,
+    "fp": 0,
+    "tn": 12,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_warning_rate": 0.0
+  },
+  "test": {
+    "count": 36,
+    "tp": 21,
+    "fp": 6,
+    "tn": 9,
+    "fn": 0,
+    "precision": 0.7777777777777778,
+    "recall": 1.0,
+    "false_warning_rate": 0.4
+  },
+  "probes": [
+    {
+      "text": "For account recovery our officer needs your login secret in this conversation.",
+      "score": 0.9436055770218571
+    },
+    {
+      "text": "Provide a verification password to the support representative.",
+      "score": 0.9914561907486396
+    },
+    {
+      "text": "To obtain the refund, send 250 to the agent first.",
+      "score": 0.9328318038044555
+    },
+    {
+      "text": "Claim your lottery winnings by depositing the processing charge.",
+      "score": 0.8649734310097413
+    },
+    {
+      "text": "Give the security code from your card to our verification team.",
+      "score": 0.9925060948009847
+    },
+    {
+      "text": "Bank safety tip: keep your login secret private and never send it in a chat.",
+      "score": 0.9287747426945756
+    },
+    {
+      "text": "The refund is complete. No deposit or processing charge is required.",
+      "score": 0.6552557791359396
+    },
+    {
+      "text": "A support representative will never request your verification password.",
+      "score": 0.266423986949294
+    },
+    {
+      "text": "Your purchase receipt is ready. Open the shopping app to view it.",
+      "score": 0.012407636574422991
+    },
+    {
+      "text": "Lunch at one? Bring your notebook and we can finish the assignment.",
+      "score": 0.1396480073344806
+    }
+  ]
+}
