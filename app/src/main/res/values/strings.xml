@@ -1,0 +1,14 @@
+<resources>
+    <string name="model_unavailable" translatable="false">Experimental AI unavailable - rules still work</string>
+    <string name="cleared" translatable="false">Cleared. No history is saved.</string>
+    <string name="use_ai" translatable="false">Use experimental AI</string>
+    <string name="cancelled" translatable="false">Check cancelled.</string>
+    <string name="example_loaded" translatable="false">Example loaded. Review it, then tap Check.</string>
+    <string name="share_error" translatable="false">The shared content could not be read. Paste the text instead.</string>
+    <string name="clipboard_empty" translatable="false">The clipboard has no text to paste.</string>
+    <string name="clipboard_file" translatable="false">Paste copied text or a link, rather than a file.</string>
+    <string name="pasted" translatable="false">Pasted locally. Review the text, then tap Check.</string>
+    <string name="checking" translatable="false">Checking on your phone...</string>
+    <string name="check_error" translatable="false">The check could not finish. Please try again.</string>
+    <string name="ready" translatable="false">Ready. Tap Check to analyse the current text.</string>
+</resources>
