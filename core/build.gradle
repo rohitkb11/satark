@@ -1,0 +1,4 @@
+plugins { id 'java-library' }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+sourceSets.main.java.exclude 'in/scamcheck/cli/**'
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
