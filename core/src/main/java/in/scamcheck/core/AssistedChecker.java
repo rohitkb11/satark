@@ -44,6 +44,6 @@ public final class AssistedChecker {
         return new CheckResult(level, findings, baseline.links(), actions,
             List.of(baseline.limitations().get(0), baseline.limitations().get(1),
                 "The local model was trained on small synthetic English examples. It is experimental and is off by default because evaluation found false warnings."),
-            "0.3.0", method);
+            "0.4.0", method);
     }
 }

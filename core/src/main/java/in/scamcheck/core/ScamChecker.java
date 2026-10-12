@@ -6,7 +6,7 @@ import static in.scamcheck.core.CheckResult.*;
 
 /** Stateless, deterministic offline baseline. No network, storage or model claims. */
 public final class ScamChecker {
-    public static final String VERSION = "0.1.0-rules";
+    public static final String VERSION = "0.4.0-rules";
     public static final int MAX_CHARACTERS = 12000;
     private final BrandRegistry brands;
     private final PublicSuffixes suffixes;

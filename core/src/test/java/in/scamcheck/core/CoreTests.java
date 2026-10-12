@@ -68,6 +68,11 @@ public final class CoreTests {
         boolean emptyRejected = false;
         try { checker.check(" "); } catch (IllegalArgumentException e) { emptyRejected = true; }
         assertTrue(emptyRejected, "Empty input rejected");
+        assertTrue(code(checker.check("Approve this UPI collect request to receive your refund"),"UPI_COLLECT_TO_RECEIVE"),"Collect to receive workflow");
+        assertTrue(code(checker.check("Scan this QR code to get cashback"),"QR_TO_RECEIVE"),"QR to receive workflow");
+        assertTrue(!code(checker.check("Never approve a UPI collect request to receive a refund"),"UPI_COLLECT_TO_RECEIVE"),"Collect prevention advice");
+        assertTrue(!code(checker.check("Do not scan a QR code to receive money"),"QR_TO_RECEIVE"),"QR prevention advice");
+        level("Legitimate payment approval","Approve the payment request to pay your electricity bill",Level.NO_WARNING_SIGNS);
         System.out.println("PASS: " + passed + " offline core regression checks. These are not detection-accuracy results.");
     }
     private static boolean code(CheckResult result, String code) { return result.findings().stream().anyMatch(f -> f.code().equals(code)); }

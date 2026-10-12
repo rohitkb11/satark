@@ -113,6 +113,7 @@ public final class MainActivity extends Activity {
         example(examples,"Normal OTP notice","Your OTP is 123456. Do not share your OTP with anyone.");
         example(examples,"Unknown short link","Can you check this? https://bit.ly/example");
         Button privacy=button("Privacy and limits",false);privacy.setId(PRIVACY_ID);page.addView(privacy,margin(12,0));privacy.setOnClickListener(v->showPrivacy());
+        Button help=button("Help after suspected fraud",false);page.addView(help,margin(8,0));help.setOnClickListener(v->showFraudHelp());
         Button controls=button("Connections, history and updates",false);page.addView(controls,margin(8,0));controls.setOnClickListener(v->startActivity(new Intent(this,PrivacyActivity.class)));
         page.addView(text("No account. No internet permission. History is optional and off by default.\nEnglish MVP - this app cannot verify a sender or a live website.",12,MUTED,false),margin(8,0));
         input.addTextChangedListener(new TextWatcher(){
@@ -147,6 +148,11 @@ public final class MainActivity extends Activity {
         }catch(RuntimeException e){status.setText(R.string.share_error);}
     }
     @Override public void onNewIntent(Intent intent){super.onNewIntent(intent);setIntent(intent);receive(intent);}
+    private void showFraudHelp(){
+        AlertDialog dialog=new AlertDialog.Builder(this).setTitle("If money was lost")
+            .setMessage("Contact your bank or payment provider using its official app or a contact you already know. For financial cyber fraud in India, call 1930 or report at cybercrime.gov.in. Keep transaction records for the official complaint.\n\nSatark does not send reports, recover money, or decide whether a person is guilty. Do not share passwords, PINs or OTPs with a caller.\n\nSource: National Cyber Crime Reporting Portal, checked 12 October 2026.")
+            .setPositiveButton("Close",null).create();dialog.show();dialog.getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+    }
     private void paste(){
         ClipboardManager clipboard=(ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
         if(clipboard==null || !clipboard.hasPrimaryClip()){status.setText(R.string.clipboard_empty);return;}
@@ -194,7 +200,7 @@ public final class MainActivity extends Activity {
         evidence.addView(text(result.level()==CheckResult.Level.NO_WARNING_SIGNS?"The available checks found no strong concern. This does not guarantee safety.":"Pause and verify the request through an independently known channel.",14,MUTED,false),margin(8,12));
         if(!result.findings().isEmpty()){
             evidence.addView(text("Why this result",16,INK,true));
-            for(CheckResult.Finding f:result.findings())evidence.addView(text("• "+f.explanation(),14,MUTED,false),margin(8,0));
+            for(CheckResult.Finding f:result.findings())evidence.addView(text("â€¢ "+f.explanation(),14,MUTED,false),margin(8,0));
         }
         for(CheckResult.Link link:result.links()){
             evidence.addView(text("Actual website address",12,MUTED,true),margin(14,3));
@@ -232,7 +238,7 @@ public final class MainActivity extends Activity {
             "Offline checks cannot inspect a live page, follow a short link or prove who sent a message. The saved organisation list is small. English is the supported MVP language.\n\n"+
             "Experimental AI is off by default. Its synthetic held-out test flagged 6 of 15 genuine examples; these small development results are not real-world accuracy. AI alone can request review, never issue a strong warning.\n\n"+
             "Notification previews require separate consent and Android access. Only selected WhatsApp previews are checked, never chat history or SMS inboxes. Link routing depends on Android and the source app; share/paste remains available.\n\n"+
-            "Version 0.3.0 · "+new UpdateStore(this).status())
+            "Version 0.4.0 Â· "+new UpdateStore(this).status())
             .setPositiveButton("Got it",null).show();
     }
     @Override protected void onStop(){super.onStop();if(busy)invalidateCheck();}

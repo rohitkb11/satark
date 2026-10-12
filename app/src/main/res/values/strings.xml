@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Satark</string>
     <string name="model_unavailable" translatable="false">Experimental AI unavailable - rules still work</string>
-    <string name="cleared" translatable="false">Cleared. No history is saved.</string>
+    <string name="cleared" translatable="false">Input cleared. Saved summaries can be deleted in privacy settings.</string>
     <string name="use_ai" translatable="false">Use experimental AI</string>
     <string name="cancelled" translatable="false">Check cancelled.</string>
     <string name="example_loaded" translatable="false">Example loaded. Review it, then tap Check.</string>
