@@ -10,3 +10,4 @@ app/build/
 core/build/
 fixture/build/
 output/*.apk
+output/*.zip

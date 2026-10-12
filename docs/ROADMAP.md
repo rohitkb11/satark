@@ -40,7 +40,7 @@ Exit: privacy controls work; integration coverage is demonstrated and honestly d
 
 Delivered: explicit opt-in WhatsApp/Business preview filtering, private generic warnings, supported HTTP(S) receiving with manual check and confirmed external handoff, encrypted optional summary history, signed and validated offline updates with rollback and retained replay floor. Tests exercise the actual Android notification service using a synthetic sender, not installed WhatsApp. No suitable licensed real threat feed has been bundled. See `PHASE_3.md` for setup and boundaries.
 
-## Phase 4 - Evaluation and competition demonstration
+## Phase 4 - Evaluation and competition demonstration (engineering package implemented)
 
 - Test unseen scam campaigns, benign banking messages, shortened links, misleading domains and app/model failures.
 - Measure recall, precision, false warnings per 1,000 benign messages, uncertain outcomes, latency and memory on named devices.
@@ -50,3 +50,5 @@ Delivered: explicit opt-in WhatsApp/Business preview filtering, private generic 
 - Prepare the self-contained pitch PDF: up to 10 slides plus up to 3 architecture pages/slides and source/AI disclosures.
 
 Exit: all working features have demonstrated acceptance evidence. Unfinished automatic integration is identified as future work.
+
+Delivered: v0.4.0 APK, UPI workflow review clues, official help text, 56-case fixed synthetic comparison, named offline emulator latency/PSS measurements, 87 core assertions, 12 interface tests and 12 installed-app tests. Demo guide, evidence report and packaging/checksums are available. The competition PDF is deferred at the owner's request; physical WhatsApp/device acceptance and independent real-world evaluation remain external validation work. See `PHASE_4.md`.

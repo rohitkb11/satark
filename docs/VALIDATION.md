@@ -65,3 +65,7 @@ For native Phase 3 tests, build/install `:fixture:assembleDebug` along with `:ap
 ## Satark naming and repository publication
 
 The existing MVP was imported into separate feature/documentation commits, then renamed in the Android label, screens and notifications. Legacy package names, cryptographic identifiers and historical screenshots remain compatible. The Satark branding build passes assembleDebug, all 12 Robolectric tests and lint (zero errors); APK signature verification passes. The prior 11 native tests cover the unchanged connection/detection logic. New output `Satark-debug.apk` has SHA-256 `64F315FE8D830012B901D51F4EA1AE2DF0778F659EDAF70679988188ED48C8AA`; the legacy APK alias has the same bytes. The earlier Phase 3 hash above identifies the pre-branding artifact.
+
+## Phase 4
+
+Current v0.4.0 evidence supersedes the earlier artifact hashes: 87 core assertions, 12 interface tests and 12 installed-app offline emulator tests pass. New screenshots show Satark. Latency, memory, synthetic-case confusion counts, final hash and external acceptance limits are documented in `PHASE_4.md` and `evaluation/`. The competition PDF is deferred at the owner's request.

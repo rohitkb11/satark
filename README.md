@@ -2,6 +2,8 @@
 
 An Android MVP in development: check suspicious messages and links on the phone, explain the evidence, and suggest independent verification.
 
+**Phase 4 engineering package is complete (v0.4.0).** [Evidence report](docs/PHASE_4.md), [demo guide](docs/DEMO_GUIDE.md), and a local delivery ZIP with checksums. The competition PDF is deferred at the owner's request. Real WhatsApp/physical-device acceptance is still required.
+
 **Phase 3 adds opt-in notification previews, supported link handling, encrypted summaries and signed offline updates.** Default checks use explicit rules. The optional trained model is off by default because the small synthetic evaluation found false warnings. Analysis performs no network requests. Optional history saves only manual-check summaries; there is no telemetry. See [Phase 3](docs/PHASE_3.md) for setup, limits and evidence.
 
 ## Android app
@@ -76,7 +78,7 @@ Reuse the same checker instance. Result fields include level, findings, links, a
 
 ## Validation
 
-55 core checks, 10 model checks and 17 signed-update checks cover destination confusion, benign OTP notices, uncertain inputs, inference parity, safe model fallback and hostile update inputs. Android tests cover confirmation, consent, encrypted storage, actual system preview delivery and rollback. These are engineering checks, not an independent fraud benchmark. See `docs/VALIDATION.md` and `model/MODEL_CARD.md`.
+60 core checks, 10 model checks and 17 signed-update checks cover destination confusion, benign OTP notices, uncertain inputs, inference parity, safe model fallback and hostile update inputs. Android tests cover confirmation, consent, encrypted storage, actual system preview delivery and rollback. These are engineering checks, not an independent fraud benchmark. See `docs/VALIDATION.md` and `model/MODEL_CARD.md`.
 
 ## Project layout
 
@@ -92,4 +94,4 @@ The core targets Java 17. The Android app uses core-library desugaring for recor
 
 ## Project name
 
-Satark — Think before you tap. The Android app label and screens use Satark. The application ID `in.scamcheck.app`, encryption identifiers and older artifact filenames are retained for compatibility with existing installs. Historical screenshots show the earlier ScamCheck name. New builds also create `output/Satark-debug.apk`.
+Satark â€” Think before you tap. The Android app label and screens use Satark. The application ID `in.scamcheck.app`, encryption identifiers and older artifact filenames are retained for compatibility with existing installs. Historical build evidence records the earlier ScamCheck name. New builds also create `output/Satark-debug.apk`.
