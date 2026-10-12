@@ -1,0 +1,21 @@
+{
+  "version": "0.4.0",
+  "date": "2026-10-12",
+  "source_commit": "f9c205604080aa6af0bdb711b6e00e43f84014e9",
+  "build": "debug, locally signed; build steps reproducible but debug key/timing prevent byte-identical results across machines",
+  "submission": "PDF deferred at owner request; real-device acceptance remains unexecuted",
+  "sha256": {
+    "output/Satark-debug.apk": "89e474980fc63cc15bcfb484f7f0546067f84904827e3f1596f8901318652b6d",
+    "README.md": "e9e302ad0cb9231ae5393d48ac2de50acbf7197655e9a36ba41ce4775d43fc4b",
+    "docs/PHASE_4.md": "1f49b6e326d69932f2dba139216686c09cc4826877ecc2f52ac0824dc3e4d1af",
+    "docs/DEMO_GUIDE.md": "71400d744ac192b032e106d3f505c9b69062597129d9aa424479e5be3f525e20",
+    "docs/PHASE_3.md": "e8173d0d6c98097d143ab0da6ecb1c70947d1a460dc73e1c8fa545af7e424f0a",
+    "docs/DATA_SOURCES.md": "ffd88af99181599c5c163af98d0ab4de08c95093b5922645aaa60a749a75cc10",
+    "model/MODEL_CARD.md": "fe44bcf03440cd2fb5e9302f5bf07d597081b964b8b687ab730565c3cb2e348f",
+    "evaluation/phase4-results.json": "db8c0bcce3e077e8a7b4aecf2d0520f8b5e9aa832e76b1a884d05ee4d5cf1da7",
+    "evaluation/phase4-device.json": "eec012883dbe341533f8c64a2e10a99d5206e7c5c8ddcc4c3855ab6ded76ea5f",
+    "evaluation/phase4-offline.txt": "e535a222f92ae06a36fa6efbd14cd3b18edba990e09bc6dd257f1d5655895d5c",
+    "output/ScamCheck-update-v1.scu": "11fee2b66d432143dc917ec941cea3b731f06e408e2485839cd796a0df0fbdba",
+    "output/ScamCheck-update-v2.scu": "21bb83bbfb894f17523d1cf34c2456e2bf3c92e0003c52f763bf06057bad98db"
+  }
+}
